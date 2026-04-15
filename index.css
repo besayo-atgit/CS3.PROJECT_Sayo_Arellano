@@ -74,10 +74,22 @@ h3 {
     width: 75px;
 }
 
+.nav-bar button:hover {
+    background-color: #EEE6F5;
+    margin-left: 10px;
+    border-radius: 7px;
+    padding: 5px;
+    width: 75px;
+}
+
 .nav-bar button a {
     color: #EEE6F5;
     font-weight: bold;
     font-size: 12px
+}
+
+.nav-bar button a:hover {
+  color: #724EC6;
 }
 
 .nav-bar img {
