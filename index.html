@@ -9,7 +9,6 @@
         <link rel = "icon" type = "image/x-icon" href = "/assets/favicon.ico">
         <link rel = "stylesheet" type = "text/css" href = "index.css">
     </head>
-    
     <nav class = "nav-bar">
         <div class = "nav-div">
             <div class = "logo">
@@ -28,11 +27,11 @@
 
     <nav class = "site-bar">
         <div class = "site-div">
-            <h5 class = "sites">STEM</h5>
-            <h5 class = "sites">Humanities</h5>
-            <h5 class = "sites">Info</h5>
-            <h5 class = "sites">More</h5>
-            <h5 class = "sites">Forum</h5>
+            <a href = "sites/stem.html"><h5 class = "sites">STEM</h5></a>
+            <a href = "sites/humm.html"><h5 class = "sites">Humanities</h5></a>
+            <a href = "sites/info.html"><h5 class = "sites">Info</h5></a>
+            <a href = "sites/more.html"><h5 class = "sites">More</h5></a>
+            <a href = "sites/forum.html"><h5 class = "sites">Forum</h5></a>
         </div>
         <style>
             .site-bar {
@@ -48,7 +47,7 @@
                 margin-top: -18px;
                 margin-bottom: -18px;
                 gap: 20px;
-                padding-right: 450px;
+                padding-right: 25vw;
             }
             .sites {
                 margin-right: 10px;
@@ -58,37 +57,57 @@
         </style>
     </nav>
     <body>
-        <section id="sfeer" class="">
             <div class="container">
+                <p>What is Tusok for Thought?</p><hr>
+                <h3>Tusok for Thought (T4T) is a project that highlights the valuability of information and fun facts in real life.
+                    As people who really enjoy placing too much time in researching random rabbit holes that we find interesting,
+                    T4T became more than just a CS3 project and became rather a personal and passion project. Our mission is to create
+                    a website that gives tidbits of info in every person's hands so that they can find their interests and niches. <br><br>
 
+                    This is the primary foundation and principle pf T4T: niches. We help find your niches so that you can seek new
+                    hobbies, passions, and interests sparked by fun facts!
+                    <br><br>
+                </h3>
+
+                <p>KALYES</p><hr>
+                <h3>Umbrella fields that capture multiple niches. Pick one!</h3>
                 <div class="gallery">
                 <div class="gallery-item" onclick="openModal(0)">
-                    <img src="https://i.imgur.com/2JBgoEk.jpeg" alt="Duck chicken">
+                    <div class="gallery-item child"><p class="hovertext">ASTRONOMY <br> Study of the sky and beyond.</p></div>
+                    <img src="/assets/astro.jpg" alt="astro">
                 </div>
+                
                 <div class="gallery-item" onclick="openModal(1)">
-                    <img src="https://i.imgur.com/y4OuiM4.jpeg" alt="Fox">
+                    <div class="gallery-item child"><p class="hovertext">BIOLOGY <br> Study of life and its processes.</p></div>
+                    <img src="/assets/bio.jpg" alt="bio">
                 </div>
                 <div class="gallery-item" onclick="openModal(2)">
-                    <img src="https://i.imgur.com/NSvEZkJ.jpeg" alt="Cheetah">
+                    <div class="gallery-item child"><p class="hovertext">CHEMISTRY <br> Study of chemicals and interactions.</p></div>
+                    <img src="/assets/chem.jpg" alt="chem">
                 </div>
                 <div class="gallery-item" onclick="openModal(3)">
-                    <img src="https://i.imgur.com/3zzv5I8.jpeg" alt="Orangutan">
+                    <div class="gallery-item child"><p class="hovertext">PHYSICS <br> Study of movement and energy.</p></div>
+                    <img src="/assets/phys.jpg" alt="phys">
                 </div>
                 <div class="gallery-item" onclick="openModal(4)">
-                    <img src="https://i.imgur.com/c9Te7MX.jpeg" alt="Caterpillar">
+                    <div class="gallery-item child"><p class="hovertext">ARTS <br> Study of human expression and emotion.</p></div>
+                    <img src="/assets/arts.jpg" alt="arts">
                 </div>
                 <div class="gallery-item" onclick="openModal(5)">
-                    <img src="https://i.imgur.com/d6OCSQd.jpeg" alt="Elephant">
+                    <div class="gallery-item child"><p class="hovertext">COMPUTER SCIENCE <br> Study of computers and networks.</p></div>
+                    <img src="/assets/cs.avif" alt="cs">
                 </div>
-
                 <div class="gallery-item" onclick="openModal(6)">
-                    <img src="https://i.imgur.com/9pmR0J7.jpeg" alt="Pictichromis diadema">
+                    <div class="gallery-item child"><p class="hovertext">SOCIAL SCIENCE <br> Study of human society and history.</p></div>
+                    <img src="/assets/socsci.jpg" alt="ss">
                 </div>
                 <div class="gallery-item" onclick="openModal(7)">
-                    <img src="https://i.imgur.com/fOma9gj.jpeg" alt="Dyeing Dart Frog">
+                    <div class="gallery-item child"><p class="hovertext">ENGINEERING <br> Study of mechanisms and inventions.</p></div>
+                    <img src="/assets/engi.jpg" alt="engg">
                 </div>
                 <div class="gallery-item" onclick="openModal(8)">
-                    <img src="https://i.imgur.com/I7SKBCu.jpeg" alt="Eurasian Eagle-Owl ">
+                    <div class="gallery-item child"><p class="hovertext">LANGUAGE <br> Study of human communication and script.</p></div>
+                    <img src="/assets/lang.webp" alt="lang">
                 </div>
 
                 </div>
@@ -105,10 +124,7 @@
                     <button class="nav-btn" onclick="nextImage()">&#9654;</button>
                     </div>
                 </div>
-
                 </div>
-
             </div>
-            </section>
     </body>
 </html>
