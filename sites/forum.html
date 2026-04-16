@@ -33,6 +33,44 @@
             <a href = "forum.html"><h5 class = "sites">Forum</h5></a>
         </div>
     </nav>
+
+    <body>
+	<div class = "container">
+    	<form>
+            <p>Welcome to the t4t forum!</p><hr><br>
+        	<label for = "usern">Username: &emsp;</label>
+    	    <input type = "text" id = "usern" placeholder = "ex. ilikegarbanzos" required> <br><br>
+            <label>Tusok-Tusok (fun fact / tangent / trivia): </form><br><br>
+            <textarea rows="5" cols="65" required placeholder = "ex. Frida Kahlo's paintings, space facts, the Toki Pona conlang"></textarea>
+    		<br><br>
+
+            <label>Pick a kalye!</label>
+            <br><br>
+            <input type = "radio" name = "kalye" id = "Arts" required>
+            <label for = "Arts">Arts</label><br>
+            <input type = "radio" name = "kalye" id = "Astro" required>
+            <label for = "Astronomy">Astronomy</label><br>
+            <input type = "radio" name = "kalye" id = "Bio" required>
+            <label for = "Bio">Biology</label><br>
+            <input type = "radio" name = "kalye" id = "Chem" required>
+            <label for = "Chem">Chemistry</label><br>
+            <input type = "radio" name = "kalye" id = "CS" required>
+			<label for = "CS">Computer Science</label><br>
+            <input type = "radio" name = "kalye" id = "Engg" required>
+			<label for = "Engg">Engineering</label><br>
+            <input type = "radio" name = "kalye" id = "Lang" required>
+			<label for = "Lang">Language</label><br>
+            <input type = "radio" name = "kalye" id = "Phys" required>
+			<label for = "Phys">Physics</label><br>
+            <input type = "radio" name = "kalye" id = "SS" required>
+            <label for = "SS">Social Science</label><br>
+			
+            <br>
+            <input type = "submit">
+            <input type = "reset">
+        </form>
+	</div>
+	</body>
 <style>
     * {
         text-decoration: none;
@@ -47,7 +85,7 @@
         padding-right: 20vw;
     }
 
-    .container p {
+    .container p, label {
         margin-left: 1vw;
         color: #EEE6F5;
         font-weight: bolder;
@@ -64,6 +102,10 @@
         color: #EEE6F5;
         font-weight: lighter;
         text-align: justify;
+    }
+
+    textarea {
+        margin-left: 10px;
     }
 
     .nav-bar {
