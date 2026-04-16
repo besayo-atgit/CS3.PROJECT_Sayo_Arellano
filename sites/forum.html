@@ -39,9 +39,9 @@
     	<form>
             <p>Welcome to the t4t forum!</p><hr><br>
         	<label for = "usern">Username: &emsp;</label>
-    	    <input type = "text" id = "usern" placeholder = "ex. ilikegarbanzos" required> <br><br>
+    	    <input name = "usern" type = "text" id = "usern" placeholder = "ex. ilikegarbanzos" required> <br><br>
             <label>Tusok-Tusok (fun fact / tangent / trivia): </form><br><br>
-            <textarea rows="5" cols="65" required placeholder = "ex. Frida Kahlo's paintings, space facts, the Toki Pona conlang"></textarea>
+            <textarea name = "tktk" rows="5" cols="65" required placeholder = "ex. Frida Kahlo's paintings, space facts, the Toki Pona conlang"></textarea>
     		<br><br>
 
             <label>Pick a kalye!</label>
@@ -69,6 +69,7 @@
             <input type = "submit">
             <input type = "reset">
         </form>
+        <div id = "test">Hello</div>
 	</div>
 	</body>
 <style>
@@ -206,3 +207,18 @@
         transition: 2ms
     }
 </style>
+<script>
+    const form = document.querySelector('form')
+
+    form.addEventListener('submit', (e) => {
+		e.preventDefault();
+
+        const fdata = new FormData(form);
+		const fobj = object.fromEntries(fdata);
+        const fjson = JSON.stringify(fobj)
+
+        localStorage.setItem('form', fjson);
+
+        document.getElementById('test').textContent = fjson;
+    })
+</script>
